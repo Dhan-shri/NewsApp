@@ -37,6 +37,8 @@ object Dependencies {
     val lifecycleRuntime by lazy { "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycleViewModelKts}" }
 
 
+
+
 }
 
 
