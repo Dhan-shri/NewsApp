@@ -8,5 +8,6 @@ object Versions {
     const val junit = "4.13.2"
     const val androidTestExtJunit = "1.1.5"
     const val androidTestEspressoCore = "3.5.1"
+    const val lifecycleViewModelKts = "2.7.0"
 
 }

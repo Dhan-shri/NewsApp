@@ -28,4 +28,21 @@ object Dependencies {
 //    "androidx.test.espresso:espresso-core:3.5.1"
 
     val androidTestEspressoCore by lazy { "androidx.test.espresso:espresso-core:${Versions.androidTestEspressoCore}" }
+
+    val lifecycleViewModelKts by lazy { "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycleRuntimeKtx}" }
+
+    val lifecycleViewmodelCompose by lazy { "androidx.lifecycle:lifecycle-viewmodel-compose:${Versions.lifecycleViewModelKts}" }
+    val lifecycleViewmodel by lazy { "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycleViewModelKts}" }
+    val lifecycleLivedata by lazy { "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.lifecycleViewModelKts}" }
+    val lifecycleRuntime by lazy { "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycleViewModelKts}" }
+
+
+}
+
+
+//use utitlies module in app module
+object Modules {
+
+    const val utilities = ":utilities"
+
 }

@@ -18,13 +18,20 @@ class MainActivity : ComponentActivity() {
         setContent {
             NewsAppTheme {
                 // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
 
-                }
             }
         }
+    }
+}
+
+
+
+@Composable
+fun NewsAppEntryPoint(){
+Surface(
+        modifier = Modifier.fillMaxSize(),
+        color = MaterialTheme.colorScheme.background
+    ) {
+        Text(text = "Hello World")
     }
 }
