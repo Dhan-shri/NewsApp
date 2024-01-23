@@ -1,6 +1,8 @@
 package com.dhanshri.newsapp.di
 
 import com.dhanshri.newsapp.data.AppConstants
+import com.dhanshri.newsapp.data.datasource.NewsDataSource
+import com.dhanshri.newsapp.data.datasource.NewsDataSourceImpl
 import com.dhanshri.newsapp.data.networkapi.ApiService
 import com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactory
 import com.squareup.moshi.JsonAdapter
@@ -65,4 +67,9 @@ class AppModule {
         return retrofit.create(ApiService::class.java)
     }
 
+    @Provides
+    @Singleton
+    fun provideNewsDataSource(apiService: ApiService) : NewsDataSource {
+        return NewsDataSourceImpl(apiService)
+    }
 }

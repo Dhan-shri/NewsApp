@@ -6,7 +6,7 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface NewsDataSource {
-    fun getNewsHeadlines(country: String ) : Response<NewsResponse>
+    suspend fun getNewsHeadlines(country: String ) : Response<NewsResponse>
 
 
 }
