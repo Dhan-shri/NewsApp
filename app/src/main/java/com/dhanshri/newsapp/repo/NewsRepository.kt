@@ -6,7 +6,7 @@ import retrofit2.Response
 import javax.inject.Inject
 
 
-// Here we fetch the data from the api and pass it to the viewmodel or other datasources
+// Here we fetch the data from the api and pass it to the viewModel or other dataSources
 
 class NewsRepository @Inject constructor(
     private val newsDataSource: NewsDataSource
@@ -15,4 +15,5 @@ class NewsRepository @Inject constructor(
     suspend fun getNewsHeadlines(country : String) : Response<NewsResponse> {
        return newsDataSource.getNewsHeadlines(country)
     }
+
 }

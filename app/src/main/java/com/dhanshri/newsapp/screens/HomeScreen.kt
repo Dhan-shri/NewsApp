@@ -20,6 +20,9 @@ fun HomeScreen(
         modifier = Modifier.fillMaxSize()
     ){
         Text(text = "Home Screen")
+        Text(text = "Home Screen")
+        Text(text = "Home Screen")
+        Text(text = "Home Screen")
     }
 }
 
